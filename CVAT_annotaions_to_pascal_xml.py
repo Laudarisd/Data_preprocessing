@@ -84,6 +84,7 @@ for root_nm in file_nm:  # file_nm is xml_file_list
             width = child.attrib['width']
             height = child.attrib['height']
             sign = 0
+            #light = 0
             bbox_list = []
             for i in child:
                 image_box = []
