@@ -60,8 +60,8 @@ with open('labels.csv', 'r', encoding='utf-8') as f_input_csv:
 
     for row in csv_input:
         filename, width, height, class_name, xmin, ymin, xmax, ymax = row
-        entries_by_filename[filename].append(row)
-
+        entries_by_filename[filename].append(row) #for whole csv to xml
+        #if you want some desire classes then comment above line and uncomment if and else comment
         #if class_name == "yes":  #for more class - if class_name in ["traffic_sign", "car", "bike"]
         #    entries_by_filename[filename].append(row)
         #else:
